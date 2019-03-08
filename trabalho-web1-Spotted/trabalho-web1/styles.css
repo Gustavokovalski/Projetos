@@ -1,0 +1,394 @@
+/*html, body {
+	height: 100%;
+}*/
+
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	overflow-x: hidden;
+	position: static;
+  	margin: 0;
+
+ 	min-height: 1000px;
+ 	max-height: 1000px;
+ 	font-family: 'Catamaran', sans-serif;
+ 	padding-bottom: 500px;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active{
+  text-decoration:none; 
+}
+
+
+.small {
+ 	min-height: 850px;
+ 	max-height: 850px;
+}
+.medium {
+ 	min-height: 1200px;
+ 	max-height: 1200px;
+}
+
+
+
+#footer {
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 0.5rem;
+  background-color: #333;
+  text-align: center;
+}
+
+
+.siteContainer {
+margin: 0 auto;
+  padding-top: 10px;
+  max-width: 1366px;
+  width: 94%;
+  margin-bottom: 500px;
+}
+
+#navbar {
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 10px;
+	display: inline;
+	position: fixed;
+	width: 100%;
+	background-color: #ADD8E6;
+	height: 60px;
+	margin-top: 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	z-index: 1;
+}
+
+#nav-right {
+	display: inline;
+	position: relative;
+	right: 75px;
+	margin-top: 5px;
+	float: right;
+}
+
+#nav-left{
+	display: inline;
+	position: absolute;
+	margin: 10px 0 0 20px;
+}
+
+#navbar a {
+	text-decoration: none;
+	font-size: 1.5em;
+	margin: 0 25px;	
+}
+
+#navbar a, #nav-right {
+	color: #333;
+}
+
+.navlinks:hover {	
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.19);
+}
+
+#header {
+	position: static;
+	text-align: center;
+	margin: 0;
+	z-index: -1;
+	width: 100%;
+	height: 250px;
+}
+
+#siteName {
+	font-size: 4.0em;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #333;
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.19);
+	display: none; /*jQuery*/
+	text-align: center;
+}
+
+.fa {
+	color: rgba(127, 175, 255, 0.5);
+	display: none; /*jQuery*/
+}
+
+#description {
+	font-family: 'Montserrat', sans-serif;
+	color: #333;
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.19);
+	font-size: 1.2em;
+	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+}
+
+.sub {
+	font-size: 1.5em;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #333;
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.19);
+	text-align: center;	
+	margin: 35px 0;
+	width: 100%;
+	font-family: 'Catamaran', sans-serif!important;
+}
+
+
+#posts {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	height: 100%;	
+
+}
+
+.newSpotted{
+	font-family: 'Montserrat', sans-serif;	
+}
+
+textarea {
+	font-size: 2.0em;
+	margin: 15px 0;
+	padding: 0 5px;
+}
+
+#postNewText {
+	font-size: 1.5em;
+}
+
+.submit {
+	font-family: 'Montserrat', sans-serif;	
+	background-color: #ADD8E6;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.submit:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#grid {
+	text-align: center;
+	width: 100%;
+/*	margin-left: 10%;*/
+/*	margin-bottom: 50px;*/
+	margin: 0 auto;
+	height: 100%;
+	padding-bottom: 175px;
+
+}
+
+.col {
+	text-align: center;
+	max-width: 23%;
+	clear: right;
+	margin: 1%;
+	color: #333;
+	min-height: 250px;
+	height: 350px;
+	border: 0.5px solid #ADD8E6;
+	border-left: 5px solid #333;
+	background-color: #ADD8E6;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#overlay .adminCol {
+	text-align: center;
+	max-width: 23%;
+	clear: right;
+	margin: 1%;
+	color: #333;
+	min-height: 250px;
+	height: 350px;
+	border: 0.5px solid #ADD8E6;
+	border-left: 5px solid #333;
+	background-color: #ADD8E6;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.rowPost{
+/*	height: 75px;*/
+/*	min-height: 125px;
+	max-height: 200px;*/
+	min-height: 270px;
+	max-height: 500px;
+	width: 200px;
+/*	max-height: 300px;*/
+	text-align: justify;
+/*	max-width: 300px;*/
+	word-wrap: break-word;
+	font-size: 0.90em;
+}
+
+
+.idUserPost {
+	color: #333;
+	display: block;
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.19);
+	font-style: strong;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#content-container {
+	height: 50px;
+}
+
+
+
+#colsContainer {
+	margin: 5% 10px;
+	text-align: center;
+}
+
+.loginCol {
+	width: 45%;
+	float: left;
+	margin: 0 10px;
+	color: #333;
+	height: 300px;
+	max-height: 500px;
+	padding: 0 15px;
+	font-weight: bold;
+}
+
+#leftCol {
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#rightCol {
+	border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.loginForm {
+	width: 100%;
+}
+
+.loginInputs {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 3%;
+	font-size: 1em;
+	border-style: solid;
+	border-color: white;
+	border-bottom: 1px solid #0a1010;
+	outline: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#logar {
+	margin: 15px auto;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+/*	margin: 0;*/
+}
+
+.home {	
+	position: absolute;
+	width:50px; 
+	height:auto;
+}
+
+.config{
+	width:30px; 
+	height:auto;
+	position: absolute;
+	margin-top: 5px;
+}
+
+.logo{
+	width:60px; 
+	height:auto;
+	padding: 15px 10px 0 0;
+}
+
+.changeInfo{
+	width: 50%;
+	font-family: 'Montserrat', sans-serif!important;
+	margin: 0 auto;
+}
+
+#loginForm{
+	width: 300px;
+	margin: 0 auto;
+}
+
+#infoConta{
+	font-weight: bold;
+}
+
+.numPage{
+	text-decoration: none;
+	float: none;
+	display: inline;
+	font-size: 1.75em;
+	margin: 5px 10px;
+	border-right: 0.5px solid rgba(0, 0, 0, 0.5);
+	padding: 5px;
+}
+
+#pages {
+	margin-top: 20%;
+	position: relative;
+	text-align: right;
+	font-size: 1.5em;
+}
+
+.adminPages {
+	margin-top: 53%;
+	position: relative;
+	text-align: right;
+	font-size: 1.75em;
+}
+
+.smallPages {
+	margin-top: 20% !important;
+}
+
+.mediumPages {
+	margin-top: 37% !important;
+}
+
+.bigPages {
+	margin-top: 85%;
+}
+
+#overlay .adminNumPages, .adminNumPages:visited {
+	text-decoration: none;
+	float: none;
+	display: inline;
+	font-size: 1.75em;
+	margin: 5px 20px;
+	border-right: 0.5px solid rgba(0, 0, 0, 0.5);
+	padding: 20px;
+}
+
+.admActions {
+	text-decoration: none;
+	color: black;
+	font-weight: 800;
+	margin: 15px 5px;
+	padding: 3px;
+}
